@@ -17,6 +17,7 @@ public class Singleton4 {
 
     /**
      * 利用内部类的特性-->内部类只有在第一次使用时才初始化
+     * 加载外部类时不会加载内部类,这样可以实现懒加载
      */
     private static class Singleton4Holder {
         private static final Singleton4 singleton = new Singleton4();
